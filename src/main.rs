@@ -1,4 +1,9 @@
+mod packets;
+
 use std::net::UdpSocket;
+
+use packets::PacketHeader;
+
 
 fn main() -> std::io::Result<()> {
     let host = "192.168.56.1";
